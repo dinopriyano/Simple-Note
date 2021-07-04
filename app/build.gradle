@@ -74,6 +74,14 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutinesViersion"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutinesViersion"
 
+    //rxKotlin
+    implementation "io.reactivex.rxjava3:rxkotlin:$rxKotlinVersion"
+    implementation "io.reactivex.rxjava3:rxandroid:$rxAndroidVersion"
+
+    //rxBinding
+    implementation "com.jakewharton.rxbinding2:rxbinding:$rxBindingVersion"
+    implementation "com.jakewharton.rxbinding2:rxbinding-design:$rxBindingVersion"
+
     // Room
     implementation "androidx.room:room-runtime:$roomVersion"
     kapt "androidx.room:room-compiler:$roomVersion"
@@ -89,7 +97,9 @@ dependencies {
     implementation "androidx.navigation:navigation-ui-ktx:$navVersion"
 
     //Radio button plus
-    implementation "com.github.worker8:RadioGroupPlus:$rbPlusVersion"
+    implementation ("com.github.worker8:RadioGroupPlus:$rbPlusVersion"){
+        transitive = false
+    }
 
     //Chocobar
     implementation "com.github.Pradyuman7:ChocoBar:$chocobarVersion"

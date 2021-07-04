@@ -1,16 +1,14 @@
-package com.dupat.note
+package com.dupat.note.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Toast
 import androidx.activity.viewModels
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import com.dupat.note.R
 import com.dupat.note.databinding.ActivityNavigationBinding
-import com.dupat.note.viewmodel.NoteViewModel
+import com.dupat.note.ui.viewmodel.NoteViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

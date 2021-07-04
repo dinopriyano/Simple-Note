@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.dupat.note.fragment.SplashFragment"
+        android:name="com.dupat.note.ui.fragment.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.dupat.note.fragment.HomeFragment"
+        android:name="com.dupat.note.ui.fragment.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -33,7 +33,7 @@
     </fragment>
     <fragment
         android:id="@+id/writeFragment"
-        android:name="com.dupat.note.fragment.WriteFragment"
+        android:name="com.dupat.note.ui.fragment.WriteFragment"
         android:label="fragment_write"
         tools:layout="@layout/fragment_write" />
 </navigation>

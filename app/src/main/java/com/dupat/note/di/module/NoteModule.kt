@@ -8,6 +8,7 @@ import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import io.reactivex.disposables.CompositeDisposable
 import javax.inject.Singleton
 
 @Module
@@ -25,5 +26,9 @@ object NoteModule {
     fun getDao(noteDB: NoteDatabase): NoteDao{
         return noteDB.noteDao()
     }
+
+    @Singleton
+    @Provides
+    fun getCompositeDisposable() = CompositeDisposable()
 
 }

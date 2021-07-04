@@ -3,7 +3,7 @@
     package="com.dupat.note">
 
     <application
-        android:name=".utils.MyApplication"
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DupatNote">
         <activity
-            android:name=".NavigationActivity"
+            android:name=".ui.NavigationActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>

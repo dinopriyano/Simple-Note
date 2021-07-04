@@ -1,4 +1,4 @@
-package com.dupat.note.fragment
+package com.dupat.note.ui.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,16 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.navGraphViewModels
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.dupat.note.R
-import com.dupat.note.adapter.NoteAdapter
+import com.dupat.note.ui.adapter.NoteAdapter
 import com.dupat.note.databinding.FragmentHomeBinding
 import com.dupat.note.db.entities.Note
-import com.dupat.note.utils.GridSpacingItemDecoration
-import com.dupat.note.viewmodel.NoteViewModel
+import com.dupat.note.ui.utils.GridSpacingItemDecoration
+import com.dupat.note.ui.viewmodel.NoteViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

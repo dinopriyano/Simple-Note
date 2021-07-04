@@ -1,4 +1,4 @@
-package com.dupat.note.utils
+package com.dupat.note.ui.utils
 
 import android.app.Activity
 import android.content.Context

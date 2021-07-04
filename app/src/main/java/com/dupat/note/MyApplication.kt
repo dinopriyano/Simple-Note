@@ -1,4 +1,4 @@
-package com.dupat.note.utils
+package com.dupat.note
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

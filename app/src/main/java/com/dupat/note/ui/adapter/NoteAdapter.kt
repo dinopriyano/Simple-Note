@@ -1,4 +1,4 @@
-package com.dupat.note.adapter
+package com.dupat.note.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

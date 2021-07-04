@@ -1,4 +1,4 @@
-package com.dupat.note.utils
+package com.dupat.note.ui.utils
 
 import android.graphics.Rect
 import android.view.View

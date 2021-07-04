@@ -1,4 +1,4 @@
-package com.dupat.note.viewmodel
+package com.dupat.note.ui.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
