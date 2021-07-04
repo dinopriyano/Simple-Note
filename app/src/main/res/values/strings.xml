@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dupat Note</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="this_title">This Title</string>
+    <string name="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry Ipsum has been the industrys standard dummy text ever since.</string>
+</resources>

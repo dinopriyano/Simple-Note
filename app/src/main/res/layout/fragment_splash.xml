@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/whiteGray"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-30dp"
+    tools:context=".fragment.SplashFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:visibility="visible"
+            android:layout_width="180dp"
+            android:src="@drawable/ic_notes"
+            android:adjustViewBounds="true"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOTE"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:textSize="36sp"
+            android:textColor="@color/primary"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="Powered By"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="#444444"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_dupat"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
