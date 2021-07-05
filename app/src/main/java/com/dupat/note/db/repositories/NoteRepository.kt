@@ -6,8 +6,11 @@ import javax.inject.Inject
 
 class NoteRepository @Inject constructor(private val dao: NoteDao) {
 
-    val notes = dao.getAllNote()
-    fun note(noteID: Int) = dao.getNote(noteID)
+    val getAllNote = dao.getAllNote()
+
+    fun getNote(noteID: Int) = dao.getNote(noteID)
+
+    fun searchNote(keyword: String) = dao.searchNote(keyword)
 
     suspend fun insertNote(note: Note){
         dao.insertNote(note)

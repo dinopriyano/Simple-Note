@@ -59,6 +59,7 @@ class PriorityDialog(val priorityListener: PriorityDialogListener, val defaultPr
         when(v!!.id){
             R.id.btnSave -> {
                 priorityListener.onSave(dialogPriority)
+                dialog?.dismiss()
             }
             R.id.btnCancel -> {
                 dialog?.dismiss()

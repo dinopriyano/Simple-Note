@@ -1,5 +1,6 @@
 package com.dupat.note.ui.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -13,21 +14,21 @@ import javax.inject.Inject
 @HiltViewModel
 class NoteViewModel @Inject constructor(private val repository: NoteRepository): ViewModel() {
 
-    val notes = MutableLiveData<List<Note>>()
+    val getAllNote = repository.getAllNote
 
-    fun getNotes(){
-        viewModelScope.launch {
-            notes.postValue(repository.notes.value)
-        }
-    }
+    fun getNote(noteID: Int) = repository.getNote(noteID)
 
-    fun showNote(noteID: Int) : LiveData<Note>{
-        return repository.note(noteID)
-    }
+    fun searchNote(keyword: String) = repository.searchNote(keyword)
 
     fun insert(note: Note){
         viewModelScope.launch {
-            repository?.insertNote(note)
+            try{
+                repository.insertNote(note)
+                Log.d("ViewModelBisa", "Bisa gan")
+            }
+            catch (e: Exception){
+                Log.d("ViewModelError", "Error: $e")
+            }
         }
     }
 

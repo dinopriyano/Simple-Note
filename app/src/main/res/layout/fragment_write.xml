@@ -100,6 +100,7 @@
             android:textColor="@color/secTextColor"/>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cvPriority"
             android:layout_width="10dp"
             android:layout_height="10dp"
             app:cardCornerRadius="5dp"
@@ -142,7 +143,7 @@
                     android:paddingEnd="0dp"
                     android:fontFamily="@font/roboto_bold"
                     android:textColor="@color/black"
-                    android:inputType="textMultiLine"
+                    android:inputType="textMultiLine|textNoSuggestions"
                     android:textColorHint="@color/black"
                     android:hint="Title"
                     android:layout_height="wrap_content" />
@@ -167,7 +168,7 @@
                     android:paddingStart="0dp"
                     android:paddingEnd="0dp"
                     android:textColor="@color/black4"
-                    android:inputType="textMultiLine"
+                    android:inputType="textMultiLine|textNoSuggestions"
                     android:minLines="10"
                     android:textColorHint="@color/black"
                     android:hint="Write note here..."

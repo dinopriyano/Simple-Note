@@ -16,6 +16,14 @@ fun Context.toast(msg: String)
     Toast.makeText(this,msg, Toast.LENGTH_LONG).show()
 }
 
+fun Context.priorityColor(priority: Int): Int{
+    return when(priority){
+        1 -> this.resources.getColor(R.color.red)
+        2 -> this.resources.getColor(R.color.orange)
+        else -> this.resources.getColor(R.color.green)
+    }
+}
+
 fun View.snackbar(msg: String)
 {
     Snackbar.make(this,msg, Snackbar.LENGTH_LONG).also { snackbar ->

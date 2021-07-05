@@ -37,10 +37,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingRight="15dp"
-                android:paddingLeft="15dp"
-                android:paddingBottom="15dp"
-                android:paddingTop="5dp"
                 android:orientation="vertical">
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -48,6 +44,9 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     app:hintEnabled="false"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
                     app:boxStrokeColor="@color/transparent"
                     app:boxCornerRadiusBottomEnd="6dp"
                     app:boxCornerRadiusBottomStart="6dp"
@@ -59,11 +58,11 @@
                     android:layout_height="wrap_content">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etSearch"
                         android:layout_width="match_parent"
                         android:textSize="16sp"
                         android:textColor="@color/black4"
                         android:padding="10dp"
-                        android:id="@+id/etSearch"
                         android:inputType="textFilter"
                         android:maxLines="1"
                         android:textColorHint="@color/grayHint"
@@ -76,9 +75,12 @@
                     android:id="@+id/rvNote"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="7.5dp"
+                    android:layout_marginBottom="7.5dp"
+                    android:layout_marginLeft="7.5dp"
+                    android:layout_marginRight="7.5dp"
                     android:scrollbars="none"
-                    android:nestedScrollingEnabled="false"
-                    android:layout_marginTop="20dp"/>
+                    android:nestedScrollingEnabled="false"/>
 
             </LinearLayout>
 
@@ -90,6 +92,8 @@
             android:layout_height="wrap_content"
             android:paddingBottom="100dp"
             android:layout_centerInParent="true"
+            android:visibility="gone"
+            tools:visibility="visible"
             android:orientation="vertical">
 
             <ImageView

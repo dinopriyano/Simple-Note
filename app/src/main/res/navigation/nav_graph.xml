@@ -35,5 +35,14 @@
         android:id="@+id/writeFragment"
         android:name="com.dupat.note.ui.fragment.WriteFragment"
         android:label="fragment_write"
-        tools:layout="@layout/fragment_write" />
+        tools:layout="@layout/fragment_write" >
+        <argument
+            android:name="isWrite"
+            app:argType="boolean"
+            android:defaultValue="true" />
+        <argument
+            android:name="note_id"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
 </navigation>

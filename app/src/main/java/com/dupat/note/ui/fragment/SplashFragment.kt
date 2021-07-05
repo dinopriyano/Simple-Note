@@ -15,6 +15,6 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
         Handler().postDelayed({
             val action = SplashFragmentDirections.actionSplashFragmentToHomeFragment()
             findNavController().navigate(action,R.id.splashFragment.navOption())
-        }, 3000)
+        }, 2000)
     }
 }

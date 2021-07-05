@@ -7,7 +7,7 @@ import com.dupat.note.db.entities.Note
 @Dao
 interface NoteDao {
 
-    @Insert
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertNote(note: Note)
 
     @Update
@@ -25,6 +25,9 @@ interface NoteDao {
     @Query("SELECT * FROM note WHERE note_id=:noteID")
     fun getNote(noteID: Int) : LiveData<Note>
 
-    @Query("SELECT * FROM note")
+    @Query("SELECT * FROM note ORDER BY priority, created_at DESC")
     fun getAllNote() : LiveData<List<Note>>
+
+    @Query("SELECT * FROM note WHERE title LIKE '%' || :keyword || '%' OR description LIKE '%' || :keyword || '%' ORDER BY priority, created_at DESC")
+    fun searchNote(keyword: String) : LiveData<List<Note>>
 }
