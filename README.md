@@ -65,7 +65,7 @@ buildscript {
 
 
 dependencies {
-    //kotlin
+        //kotlin
         implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
         implementation "androidx.core:core-ktx:$coreVersion"
     
