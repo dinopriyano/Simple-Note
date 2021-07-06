@@ -9,17 +9,9 @@
 # Instruction
 
 ## Gradle
+
+### Project Gradle
 ```
-plugins {
-    id 'com.android.application'
-    id 'kotlin-android'
-    id 'kotlin-android-extensions'
-    id 'androidx.navigation.safeargs.kotlin'
-    id 'kotlin-kapt'
-    id 'dagger.hilt.android.plugin'
-}
-
-
 buildscript {
     ext {
         //dependencies version
@@ -62,7 +54,20 @@ buildscript {
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hiltVersion"
     }
 }
+```
 
+### Module Gradle
+```
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+..........
 
 dependencies {
         //kotlin
