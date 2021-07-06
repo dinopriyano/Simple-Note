@@ -153,7 +153,7 @@ dependencies {
 - IDE: Android Studio
 - Arthitecture: MVVM
 - Programming Language: Kotlin
-- Third Party Libraries: Hilt, Dagger, Navigation Component, RxJava, Room, SQLCipher Glide, ButterKnife, Gson, etc...
+- Third Party Libraries: Hilt, Dagger, Navigation Component, RxJava, Room, SQLCipher, Glide, ButterKnife, Gson, etc...
 
 # Demo App
 
